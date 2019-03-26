@@ -1,0 +1,62 @@
+
+*{
+	padding: 10px;
+}
+.cards{
+	display:flex;
+	justify-content: space-around;
+}
+.card{
+	width: 30%;
+}
+.card button{
+	justify-content: center;
+}
+.galeria{
+	display: flex;
+	justify-content: space-around;
+}
+.galeria div{
+
+	max-width: 30% ;
+
+}
+
+@keyframes fadp{
+	0%{background:red;}
+   20%{background:blue;}
+   40%{background:yellow;}
+   60%{background:aqua;}
+   100%{background:pink;}
+}
+
+@media screen and (max-width: 600px){
+	body{
+		color: black;
+		background: pink;
+
+	}
+	.galeria{
+		flex-direction: column;
+	}
+	.galeria div{
+		max-width: 100%;
+		animation: fadp 1 alternate 3s;
+	}
+
+		
+	.cards{
+		flex-direction: column;
+	}
+
+	.card {
+		width: 100%;
+		color: black;
+	}
+}
+@media print{
+	.fotoHeader, .lead, .bloquote, .card, .btn, .table{
+		display: none;
+	}
+}
+

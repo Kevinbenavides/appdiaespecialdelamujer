@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Web Bootstrap</title>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			<a class="navbar-brand" href="#">Inicio</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    				<ul class="navbar-nav mr-auto">
+      					<li class="nav-item active">
+        						<a class="nav-link" href="#">Información <span class="sr-only">(current)</span></a>
+     		 			</li>
+      					<li class="nav-item">
+        					<a class="nav-link" href="#">Link</a>
+      					</li>
+      					<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         		 			Dropdow </a>
+        					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         							<a class="dropdown-item" href="#galeria">Galeria</a>
+          							<a class="dropdown-item" data-target="#ventana" data-toggle="modal" href="#">Noticias</a>
+        				  			<div class="dropdown-divider"></div>
+          							<a class="dropdown-item" href="#">Something else here</a>
+        					</div>
+      					</li>
+     				 	<li class="nav-item">
+        					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      					</li>
+    				</ul>
+			    <!-- <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			    </form> -->
+	  	</div>
+		</nav>	
+		<img src="images/Imagen principal.jpg" class="img-fluid fotoHeader" alt="Responsive image">
+		<h1>Diplomado Web</h1><cite>Proyecto:App dia de la mujer</cite>
+		<hr>
+		<p class="lead">La mujer salió de la costilla del hombre, no de los pies para ser pisoteada, ni de la cabeza para ser superior, sino del lado para ser igual. Debajo del brazo para ser protegida y al lado del corazón para ser amada.</p>
+		<blockquote class="blockquote text-center">
+				<p>A Dios se le escapo un ángel, con sus alas blancas se posó en mi vida. Desde entonces, mi corazón, mi alma, mi vida, es un infinito de alegrías. A Dios se le escapó un ángel y hoy es mi mujer..</p>
+				<footer class="blockquote-footer text-right">Frases</footer>
+		</blockquote>
+		
+		<!--CARTAS DE BOOTSTRAP-->
+		<div class="cards">	
+			<div class="card">
+				<img class="card-img-top" src="images/foto 2.jpg" alt="">
+				<div class="car-body">
+				<h5 class="card-tittle">FRASES DEL DIA DE LA MUJER</h5>
+				<p class="card-text">La belleza de una mujer no está en un lunar facial, la verdadera belleza de una mujer se refleja en su alma. Mis mejores deseos para el 8 de marzo.</p>
+					
+			</div>
+			</div>
+			<div class="card">
+			<img class="card-img-top" src="images/foto 3.jpg" alt="">
+			<div class="car-body">
+				<h5 class="card-tittle">FRASES DEL DIA DE LA MUJER</h5>
+				<p class="card-text">En cada sentimiento que experimente tu corazón, en cada experiencia que descubras con tus sentidos, en cada abrazo que entregues, hay una mujer que lo entrego todo para hacerlo posible.</p>
+				
+			</div>
+			</div>
+			<div class="card">
+			<img class="card-img-top" src="images/foto 4.jpg" alt="">
+			<div class="car-body">
+				<h5 class="card-tittle">FRASES DEL DIA DE LA MUJER</h5>
+				<p class="card-text">Para ti mujer toda la felicidad del mundo, todo el amor.
+                   Que todos tus sueños se vuelvan realidad, en definitiva sé que formo parte de ellos.
+                   Felicidades.</p>
+				
+			</div>
+			</div>
+		</div>
+
+		<!--FIN CARTAS DE BOOTSTRAP-->                   
+		<!--slider -->
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="images/imagen 1.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/imagen 2.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/imagen 3.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+		
+		<!--FIN BOTONES-->
+		<div class="galeria" id="galeria">
+			<div><img class = "img-tumbnail img-fluid " src="images/foto 1.jpg" alt="foto1"></div>
+			<div><img class = "img-tumbnail img-fluid " src="images/foto 5.jpg" alt="foto2"></div>
+			<div><img class = "img-tumbnail img-fluid " src="images/foto 6.jpg" alt="foto3"></div>
+			
+		</div>
+
+		
+		<!--Ventana Modal -->
+			<div  id="ventana"class="modal" tabindex="-1"  role="dialog">
+				<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title">Noticias</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<img src="images/mensaje del dia de lamujer.jpg" alt="">
+				        <p>Modal body text goes here.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				</div>
+			</div>
+
+	
+		<!--Ventana Modal -->
+		<div class="alert alert-success">	
+			Hoy quiero darte gracias por todo lo que me has brindado y darle gracias a Dios por haberme dado una madre como tú. Gracias.
+		</div>
+
+        
+      <embed src="images/Andrea Bocelli Marta Sanchez - Vivo Por Ella.mp3" autostart="true" loop="false" width="250" height="60"></embed>
+
+
+
+
+
+	
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
